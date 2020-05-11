@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+    let band =
+    {
+        name: "The Beatles",
+        nationality: "England",
+        genre: "Rock",
+        members: ["John Lennon", "Ringı Starr"],
+        formed: 1960,
+        split: 1970,  
+        albums: 
+        [
+            {
+                name: "Revolver",
+                released: 1966
+            },
+            {
+                name: "Road",
+                released: 1970
+            }
+        ]
+    };
+
+    band.bandInfo = "The Beatles were an English rock band formed in Liverpool in 1960. With a line-up comprising John Lennon, Paul McCartney, George Harrison and Ringo Starr, they are regarded as the most influential band of all time.[1] The group were integral to the development of 1960s counterculture and popular music's recognition as an art form";
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
